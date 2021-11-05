@@ -188,6 +188,7 @@ figcaption {
     color: #F9FAF8;
     font-size: 20px;
     font-weight: 700;
+    position: relative;
 }
 
 button {
@@ -203,7 +204,21 @@ footer {
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+#lickbutton img {
+    position: absolute;
+    bottom: 35px;
+    width: 400px;
+    left: -150px;
+    border-radius: 40%;
+    display: none;
+}
+
+#lickbutton:hover img {
+    display: block;
 }
